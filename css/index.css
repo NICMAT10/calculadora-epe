@@ -1,0 +1,116 @@
+:root {
+  --color-theme: #514ef3;
+  --color-active: #7e75f1;
+  --color-back-active: #c2baee;
+  --color-gradient: linear-gradient(to right, var(--color-theme),
+      var(--color-back-active));
+}
+
+body {
+  background: var(--color-gradient);
+  border-color: var(--color-active);
+}
+
+header {
+  background: var(--color-gradient);
+  border-color: var(--color-active);
+  padding: 10px;
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--color-back-active);
+}
+
+main {
+  margin: auto;
+  margin-top: 200px;
+  overflow: auto;
+  padding: 15px;
+  padding-bottom: 60px;
+  height: calc(100% - 120px);
+  font-size: 20px;
+  box-shadow: 0px 0px 20px 0px var(--color-theme);
+  border-radius: 11px;
+  max-width: 400px;
+  background-color: var(--color-gradient);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content-select {
+  max-width: 250px;
+  position: relative;
+}
+
+.content-select select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+  outline: 0;
+  border: 0;
+  background: var(--color-back-active);
+  color: var(--color-theme);
+  font-size: 1em;
+  color: var(--color-active);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-color: var(--color-theme);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.form-control {
+  color: var(--color-back-active);
+  color: var(--color-active);
+  border-color: var(--color-theme);
+  text-align: center;
+  font-size: 100%;
+  border-radius: 12px;
+}
+
+.form-control:hover {
+  border-color: var(--color-theme);
+}
+
+
+.btn {
+  color: var(--color-active);
+  border-color: var(--color-theme);
+  width: 100%;
+  padding-bottom: 1px;
+  text-align: center;
+  font-size: 150%;
+  border-radius: 12px;
+  margin-top: 25px;
+}
+
+.btn:hover {
+  background-color: var(--color-theme);
+  border-color: var(--color-theme);
+}
+
+.result {
+  color: var(--color-back-active);
+  color: var(--color-active);
+  border-color: var(--color-theme);
+  text-align: center;
+  font-size: 100%;
+  border-radius: 12px;
+  margin-top: 8%;
+  padding: 7px 10px;
+}
+
+.result:hover {
+  border-color: var(--color-theme);
+}

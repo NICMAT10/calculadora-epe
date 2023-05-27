@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>calculadora EPE</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container logo-nav-container">
+          CALCULADORA EPE<img src="img/logo-epe-empresa.png" alt="epe" width="150" height="100">
+      </div>
+  </header>
+  <main>
+      <form action="">
+          <section id="tipoUsuario">                               
+                      <form action="#">
+                          <div class="content-select">
+                              <select name="select" id="selectUsuario">
+                                  <option value="" disabled selected>Seleccionar usuario</option>
+                                  <option value="1.27">Industrial</option>
+                                  <option value="1.21">Residencial</option>                                   
+                              </select>
+                          </div>
+                      </form>
+                  <br>
+          </section>
+      </form>
+          <section id="zona">
+              <form action="#">
+                  <div class="content-select">
+                      <select name="select" id="selectZona" >
+                          <option value="0" disabled selected>Seleccion zona</option>
+                          <option value="5.80">Distrito Centro</option>
+                          <option value="5.40">Distrito Sur</option>
+                          <option value="5.35">Distrito Oeste</option>
+                          <option value="5.60">Distrito Norte</option>
+                      </select>
+                  </div>
+              </form>
+              <br>
+          </section>
+          <section id="kwa">
+              <div class="form-imput">
+                  <label class="form-label" for="consumo">Consumo mensual en Kwh</label>
+                          <input class="form-control" type="number" name="value" id="consumo">         
+              </div>
+          </section>
+          <section id="total">
+              <div class="form-input">
+                  <input class="btn"type="button" id="btn" onclick="calcularCosto();" value="Total a pagar">
+                  <input class="result" type="text" id="result">
+              </div>    
+          </section> 
+  </main>
+
+</body>
+<script src="js/script.js"></script>
+</html>
+
+  </body>
+</html>
